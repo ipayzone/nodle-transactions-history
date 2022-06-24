@@ -1,5 +1,5 @@
 {
-  "name": "nodle-transactions-history",
+  "name": "nodle-transactions-historyV3",
   "version": "1.0.0",
   "description": "This project can be used as a starting point for developing your SubQuery project",
   "main": "dist/index.js",
@@ -27,5 +27,9 @@
   },
   "resolutions": {
     "ipfs-unixfs": "6.0.6"
+  },
+  "dependencies": {
+    "@polkadot/util": "9.6.1",
+    "@polkadot/util-crypto": "^9.6.1"
   }
 }
