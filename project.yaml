@@ -1,22 +1,29 @@
-specVersion: 0.2.0
-name: nova
+specVersion: 1.0.0
+name: nodle-transactions-history
 version: 1.0.0
-description: Nova SubQuery project
-repository: https://github.com/nova-wallet/subquery-nova
+runner:
+  node:
+    name: '@subql/node'
+    version: 1.2.1
+  query:
+    name: '@subql/query'
+    version: 1.2.0
+description: 'Nodle Transactions History'
+repository: 'https://github.com/ipayzone/nodle-transactions-history'
 schema:
   file: ./schema.graphql
 network:
-  genesisHash: '0x97da7ede98d7bad4e36b4d734b6055425a3be036da2a332ea5a7037656427a21'
-  endpoint: wss://nodle-parachain.api.onfinality.io/ws?apikey=07f15f84-2391-4ac6-9397-d840c0141bb0
-  dictionary: https://api.subquery.network/sq/subquery/nodle-dictionary
-
+  chainId: '0x97da7ede98d7bad4e36b4d734b6055425a3be036da2a332ea5a7037656427a21'
+  endpoint: 'wss://nodle-parachain.api.onfinality.io/ws?apikey=07f15f84-2391-4ac6-9397-d840c0141bb0'
+  dictionary: 'https://api.subquery.network/sq/subquery/nodle-dictionary'
 dataSources:
-  - name: main
-    kind: substrate/Runtime
+  - kind: substrate/Runtime
     startBlock: 432000
     mapping:
-      file: ./dist/src/index.js
+      file: ./dist/index.js
       handlers:
+        - handler: handleBlock
+          kind: substrate/BlockHandler
         - handler: handleHistoryElement
           kind: substrate/CallHandler
         - handler: handleReward

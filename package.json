@@ -1,32 +1,34 @@
 {
-  "name": "nodle-transaction-history",
+  "name": "nodlebalanceindexer",
   "version": "1.0.0",
-  "description": "Nodle POS project",
+  "description": "Nodle Balance",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -b",
     "prepack": "rm -rf dist && npm build",
-    "codegen": "./node_modules/.bin/subql codegen",
-    "validate": "./node_modules/.bin/subql validate",
-     "start:docker": "docker-compose pull && docker-compose up --remove-orphans"
+    "test": "jest",
+    "codegen": "./node_modules/.bin/subql codegen"
   },
+  "homepage": "https://github.com/subquery/nodle-subql-starter",
+  "repository": "github:subquery/nodle-subql-starter",
   "files": [
     "dist",
     "schema.graphql",
     "project.yaml"
   ],
-  "author": "Technoprepay",
-  "license": "Apache-2.0",
-  "dependencies": {
-    "lodash": "^4.17.21"
-  },
+  "author": "Technoprepay Solutions",
+  "license": "MIT",
   "devDependencies": {
     "@polkadot/api": "^7",
-    "@subql/cli": "^0.23.0",
-    "@subql/types": "^0.12.0",
+    "@subql/cli": "^latest",
+    "@subql/types": "latest",
     "typescript": "^4.7.4"
   },
-  "resolutions": {
-    "ipfs-unixfs": "6.0.6"
+  "exports": {
+    "chaintypes": "src/chaintypes.ts"
+  },
+  "dependencies": {
+    "@polkadot/util": "9.6.1",
+    "@polkadot/util-crypto": "^9.6.1"
   }
 }
