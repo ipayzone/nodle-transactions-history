@@ -1,15 +1,15 @@
 specVersion: 1.0.0
-name: nodle-transactions-history
+name: nodle-transactions-historyV3
 version: 1.0.0
 runner:
   node:
     name: '@subql/node'
-    version: 1.2.1
+    version: '0.31.1'
   query:
     name: '@subql/query'
-    version: 1.2.0
-description: 'Nodle Transactions History'
-repository: 'https://github.com/ipayzone/nodle-transactions-history'
+    version: '0.13.0'
+description:  'Nodle Transactions History'
+repository: 'https://github.com/subquery/subql-starter'
 schema:
   file: ./schema.graphql
 network:
