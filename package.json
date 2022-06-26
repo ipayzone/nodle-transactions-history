@@ -7,7 +7,8 @@
     "build": "tsc -b",
     "prepack": "rm -rf dist && npm run build",
     "start:docker": "docker-compose pull && docker-compose up --remove-orphans",
-    "codegen": "./node_modules/.bin/subql codegen"
+    "codegen": "./node_modules/.bin/subql codegen",
+    "validate": "./node_modules/.bin/subql validate"
   },
   "homepage": "https://github.com/subquery/subql-starter",
   "repository": "github:subquery/subql-starter",
@@ -26,8 +27,7 @@
   "devDependencies": {
     "@polkadot/api": "^7",
     "@subql/cli": "^0.25.0",
-    "@subql/node": "^0.33.0",
-    "@subql/query": "^0.13.0",
+    "@subql/node": "0.29.1",
     "@subql/types": "^0.14.0",
     "typescript": "^4.7.4"
   },
