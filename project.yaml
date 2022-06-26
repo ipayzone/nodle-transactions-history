@@ -9,7 +9,7 @@ runner:
     name: '@subql/query'
     version: 1.0.0
 description: Nova SubQuery project
-repository: https://github.com/nova-wallet/subquery-nova
+repository: https://github.com/ipayzone/nodle-transactions-history
 schema:
   file: ./schema.graphql
 network:
