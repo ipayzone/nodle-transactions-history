@@ -1,5 +1,5 @@
 specVersion: 1.0.0
-name: nodle-transactions-historyV3
+name: nodle-transactions-history
 version: 1.0.0
 runner:
   node:
