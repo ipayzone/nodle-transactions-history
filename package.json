@@ -1,5 +1,5 @@
 {
-  "name": "nodle-transactions-historyV3",
+  "name": "nodle-transactions-history",
   "version": "1.0.0",
   "description": "This project can be used as a starting point for developing your SubQuery project",
   "main": "dist/index.js",
@@ -7,8 +7,7 @@
     "build": "tsc -b",
     "prepack": "rm -rf dist && npm run build",
     "start:docker": "docker-compose pull && docker-compose up --remove-orphans",
-    "codegen": "./node_modules/.bin/subql codegen",
-    "validate": "./node_modules/.bin/subql validate"
+    "codegen": "./node_modules/.bin/subql codegen"
   },
   "homepage": "https://github.com/subquery/subql-starter",
   "repository": "github:subquery/subql-starter",
@@ -27,7 +26,8 @@
   "devDependencies": {
     "@polkadot/api": "^7",
     "@subql/cli": "^0.25.0",
-    "@subql/node": "0.29.1",
+    "@subql/node": "0.33.0",
+    "@subql/query": "0.13.0",
     "@subql/types": "^0.14.0",
     "typescript": "^4.7.4"
   },
