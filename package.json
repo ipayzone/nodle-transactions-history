@@ -1,13 +1,14 @@
 {
-  "name": "nodle-transactions-history",
+  "name": "nodle-transactions-historyV1.0.0",
   "version": "1.0.0",
-  "description": "This project can be used as a starting point for developing your SubQuery project",
+  "description": "Nodle POS project",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -b",
     "prepack": "rm -rf dist && npm run build",
     "start:docker": "docker-compose pull && docker-compose up --remove-orphans",
-    "codegen": "./node_modules/.bin/subql codegen"
+    "codegen": "./node_modules/.bin/subql codegen",
+    "validate": "./node_modules/.bin/subql validate"
   },
   "homepage": "https://github.com/subquery/subql-starter",
   "repository": "github:subquery/subql-starter",
@@ -16,8 +17,8 @@
     "schema.graphql",
     "project.yaml"
   ],
-  "author": "Technoprepay",
-  "license": "MIT",
+  "author": "Jay Ji",
+  "license": "Apache-2.0",
   "dependencies": {
     "@polkadot/util": "^8.7.1",
     "@polkadot/util-crypto": "^8.7.1",
@@ -26,9 +27,9 @@
   "devDependencies": {
     "@polkadot/api": "^7",
     "@subql/cli": "^0.25.0",
-    "@subql/node": "^0.30.1",
-    "@subql/query": "^0.13.0",
     "@subql/types": "^0.14.0",
+    "@subql/node": "^0.30.1",
+    "@subql/query": "^1.2.0",
     "typescript": "^4.7.4"
   },
   "resolutions": {
