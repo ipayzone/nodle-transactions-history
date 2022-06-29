@@ -10,8 +10,8 @@
     "codegen": "./node_modules/.bin/subql codegen",
     "validate": "./node_modules/.bin/subql validate"
   },
-  "homepage": "https://github.com/subquery/subql-starter",
-  "repository": "github:subquery/subql-starter",
+  "homepage": "www.technoprepay.com",
+  "repository": "https://github.com/ipayzone/nodle-transactions-history",
   "files": [
     "dist",
     "schema.graphql",
