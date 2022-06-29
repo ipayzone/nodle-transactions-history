@@ -1,7 +1,7 @@
 {
   "name": "nodle-transactions-history",
   "version": "1.0.0",
-  "description": "This project can be used as a starting point for developing your SubQuery project",
+  "description": "Project provides transaction history to Nodle POS",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -b",
