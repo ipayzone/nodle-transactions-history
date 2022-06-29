@@ -1,7 +1,7 @@
 {
-  "name": "nodle-transactions-historyV1.0.0",
+  "name": "nodle-transactions-history",
   "version": "1.0.0",
-  "description": "Nodle POS project",
+  "description": "This project can be used as a starting point for developing your SubQuery project",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -b",
@@ -17,20 +17,20 @@
     "schema.graphql",
     "project.yaml"
   ],
-  "author": "Jay Ji",
-  "license": "Apache-2.0",
+  "author": "Technoprepay",
+  "license": "MIT",
   "dependencies": {
-    "@polkadot/util": "^8.7.1",
-    "@polkadot/util-crypto": "^8.7.1",
+    "@polkadot/util": "^9.6.2",
+    "@polkadot/util-crypto": "^9.6.2",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@polkadot/api": "^7",
+    "@polkadot/api": "^8",
     "@subql/cli": "^0.25.0",
-    "@subql/types": "^0.14.0",
-    "@subql/node": "^0.30.1",
+    "@subql/node": "^1.2.1",
     "@subql/query": "^1.2.0",
-    "typescript": "^4.7.4"
+    "@subql/types": "^0.14.0",
+    "typescript": "^4.1.3"
   },
   "resolutions": {
     "ipfs-unixfs": "6.0.6"
