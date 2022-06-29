@@ -7,7 +7,7 @@ runner:
     version: 1.3.0
   query:
     name: '@subql/query'
-    version: 1.2.0
+    version: 1.2.1
 description: 'Nodle Transactions History'
 repository: 'https://github.com/ipayzone/nodle-transactions-history'
 schema:
