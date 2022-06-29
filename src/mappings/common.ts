@@ -107,7 +107,7 @@ export function calculateFeeAsString(extrinsic?: SubstrateExtrinsic, from: strin
     }
 }
 
-export function getEventData(event: SubstrateEvent){
+export function getEventData(event: SubstrateEvent): GenericEventData{
     return event.event.data
 }
 
