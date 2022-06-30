@@ -9,7 +9,7 @@ runner:
     name: '@subql/query'
     version: 1.2.1
 description: 'Nodle Transactions History'
-repository: 'https://github.com/ipayzone/nodle-transactions-history'
+repository: 'github.com/ipayzone/nodle-transactions-history'
 schema:
   file: ./schema.graphql
 network:
